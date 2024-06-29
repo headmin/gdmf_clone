@@ -17,7 +17,7 @@ jobs:
       - name: Fetch JSON from Apple
         run: |
           mkdir -p cache
-          curl -o cache/data.json https://gdmf.apple.com/v2/pmv
+          curl -k -o cache/data.json https://gdmf.apple.com/v2/pmv
 
       - name: Commit JSON to repo
         run: |
