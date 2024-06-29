@@ -6,6 +6,7 @@ on:
       - main  # Change this to your main branch name if different
   schedule:
     - cron: '*/10 * * * *'  # every 10minutes
+  workflow_dispatch:
 
 jobs:
   fetch-json:
